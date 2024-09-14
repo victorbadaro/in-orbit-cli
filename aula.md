@@ -8,7 +8,7 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 ## Peças de uma linguagem
 
 - [x] Comentários
-- [ ] Declaração de variáveis (const, let)
+- [x] Declaração de variáveis (const, let)
 - [ ] Operação (atribuição, concatenação, matemáticos, lógicos)
 - [ ] Tipos de dados (string, number, boolean)
 - [ ] Estrutura de dados (functions, object, array)
@@ -29,3 +29,4 @@ Contantes
 ## Tipos de dados
 Strings (textos): "" '' ``
 Number: 2 1.4
+Function
