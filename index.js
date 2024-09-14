@@ -53,6 +53,20 @@ const doneGoals = async () => {
   });
 };
 
+const showOpenGoals = async () => {
+  const openGoals = goals.filter((goal) => !goal.checked);
+
+  if (openGoals.length === 0) {
+    console.log('Não existem metas abertas! :)');
+    return;
+  }
+
+  await select({
+    message: 'Metas Abertas: ' + openGoals.length,
+    choices: [...openGoals]
+  });
+};
+
 const start = async () => {
   while (true) {
     let option = await select({
@@ -71,6 +85,10 @@ const start = async () => {
           value: 'realizadas'
         },
         {
+          name: 'Metas abertas',
+          value: 'abertas'
+        },
+        {
           name: 'Sair',
           value: 'sair'
         }
@@ -86,6 +104,9 @@ const start = async () => {
         break;
       case 'realizadas':
         await doneGoals();
+        break;
+      case 'abertas':
+        await showOpenGoals();
         break;
       case 'sair':
         console.log('Até a próxima');
