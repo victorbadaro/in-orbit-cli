@@ -1,29 +1,37 @@
-// arrays, objetos
-const goals = ['victor', 'hello'];
+const { select } = require('@inquirer/prompts');
 
-console.log(goals);
-console.log(goals[0]);
-console.log(goals[1]);
-console.log(goals[1] + ', ' + goals[0] + '!');
+const start = async () => {
+  while (true) {
+    let option = await select({
+      message: 'Menu >',
+      choices: [
+        {
+          name: 'Cadasrar meta',
+          value: 'cadastrar'
+        },
+        {
+          name: 'Listar metas',
+          value: 'listar'
+        },
+        {
+          name: 'Sair',
+          value: 'sair'
+        }
+      ]
+    });
 
-const goal = {
-  value: 'ler um livro por mês',
-  checked: false
+    switch (option) {
+      case 'cadastrar':
+        console.log('vamos cadastrar');
+        break;
+      case 'listar':
+        console.log('vamos listar');
+        break;
+      case 'sair':
+        console.log('Até a próxima');
+        return;
+    }
+  }
 };
 
-console.log('-----------------');
-
-console.log(goal);
-console.log(goal.value);
-console.log(goal.checked);
-
-console.log('-----------------');
-
-goal.value = 'ler um livro duas vezes';
-
-console.log(goal.value);
-
-// function / arrow function
-function isChecked() { }
-
-const createGoal = () => { }
+start();
