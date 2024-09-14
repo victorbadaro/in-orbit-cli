@@ -10,8 +10,8 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 - [x] Comentários
 - [x] Declaração de variáveis (const, let)
 - [ ] Operação (atribuição, concatenação, matemáticos, lógicos)
-- [ ] Tipos de dados (string, number, boolean)
-- [ ] Estrutura de dados (functions, object, array)
+- [x] Tipos de dados (string, number, boolean)
+- [x] Estrutura de dados (functions, object, array)
 - [ ] Controle de fluxo (if/else)
 - [ ] Estrutura de repetição (for, while)
 
@@ -23,10 +23,32 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 
 ## Escopo e variáveis
 
-Variáveis globais e locais
-Contantes
+- [x] Variáveis globais e locais
+- [x] Contantes
 
 ## Tipos de dados
-Strings (textos): "" '' ``
-Number: 2 1.4
-Function
+- [x] Strings (textos): "" '' ``
+- [x] Number: 2 1.4
+- [x] Boolean
+
+# Operadores
+
+- [x] Operadores de atribuição de valor
+- [x] Operador de concatenação
+
+## Estruturas de dados
+
+### Arrays
+
+- [x] Uma lista que contém qualquer tipo de dado
+
+### Objetos
+
+- [x] Atributos e métodos
+- [x] Criação e manipulação de objetos
+- [x] Acesso a propriedades de objetos
+
+### Functions
+- [x] Criar, passar argumento
+- [x] Executar
+- [x] Arrow function / Named function

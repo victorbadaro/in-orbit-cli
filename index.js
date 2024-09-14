@@ -1,16 +1,29 @@
-// Hello, World!
-const message1 = 'This is a class';
-let message2 = 'Hello, World!';
+// arrays, objetos
+const goals = ['victor', 'hello'];
 
-console.log(message1);
+console.log(goals);
+console.log(goals[0]);
+console.log(goals[1]);
+console.log(goals[1] + ', ' + goals[0] + '!');
+
+const goal = {
+  value: 'ler um livro por mês',
+  checked: false
+};
 
 console.log('-----------------');
 
-console.log(message2);
-console.log(message2);
+console.log(goal);
+console.log(goal.value);
+console.log(goal.checked);
 
 console.log('-----------------');
 
-message2 = 'Hello, Javascript!';
+goal.value = 'ler um livro duas vezes';
 
-console.log(message2);
+console.log(goal.value);
+
+// function / arrow function
+function isChecked() { }
+
+const createGoal = () => { }
